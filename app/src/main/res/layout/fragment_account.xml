@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="107dp"
+            android:layout_height="32dp"
+            android:text="@string/account"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/userImg"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="@dimen/text_forum_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edit_forum"
+            android:text=""
+            android:textSize="@dimen/profile_name"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userImg"
+            tools:text="Name" />
+
+
+        <TextView
+            android:id="@+id/icView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="@dimen/thirty"
+            android:text="IC"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+        <TextView
+            android:id="@+id/userIC"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/ic"
+            app:layout_constraintBaseline_toBaselineOf="@+id/icView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.591"
+            app:layout_constraintStart_toEndOf="@+id/icView"
+            tools:text="IC" />
+
+        <TextView
+            android:id="@+id/phoneView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="@dimen/edit_forum_padding"
+            android:text="Phone No."
+            android:textSize="@dimen/text_forum"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/icView"  />
+
+        <TextView
+            android:id="@+id/userPhone"
+            android:layout_width="180dp"
+            android:layout_height="@+id/phoneView"
+            android:text=""
+            android:textSize="@dimen/text_forum"
+            app:layout_constraintBaseline_toBaselineOf="@+id/phoneView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.359"
+            app:layout_constraintStart_toEndOf="@+id/phoneView"
+            tools:text="Phone No" />
+
+        <TextView
+            android:id="@+id/emailView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="@dimen/edit_forum_padding"
+            android:text="E-mail"
+            android:textSize="@dimen/text_forum"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phoneView" />
+
+        <TextView
+            android:id="@+id/userEmail"
+            android:layout_width="180dp"
+            android:layout_height="@+id/emailView"
+            android:text=""
+            android:textSize="@dimen/text_forum"
+            app:layout_constraintBaseline_toBaselineOf="@+id/emailView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toEndOf="@+id/emailView"
+            tools:text="E-mail" />
+
+        <TextView
+            android:id="@+id/statusView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="@dimen/edit_forum_padding"
+            android:text="Status"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailView"  />
+
+        <TextView
+            android:id="@+id/userStatus"
+            android:layout_width="180dp"
+            android:layout_height="@+id/phoneView"
+            android:text=""
+            android:textSize="@dimen/text_forum"
+            app:layout_constraintBaseline_toBaselineOf="@+id/statusView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toEndOf="@+id/statusView"
+            tools:text="Status"  />
+
+        <Button
+            android:id="@+id/btnEdit"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/baseline_edit_black_18dp"
+            android:layout_marginTop="@dimen/fifty_two"
+            android:drawablePadding="20dp"
+            android:text="@string/edit_account"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/statusView"  />
+
+        <Button
+            android:id="@+id/btnPostForum"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/baseline_forum_black_18dp"
+            android:drawablePadding="20dp"
+            android:text="@string/manage_forum"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnEdit" />
+
+        <Button
+            android:id="@+id/btnLogOut"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="60dp"
+            android:background="@android:color/holo_red_light"
+            android:drawableLeft="@drawable/baseline_power_settings_new_black_18dp"
+            android:drawablePadding="20dp"
+            android:text="Log Out"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnPostForum"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home"
+        android:title="@string/home"
+        android:icon="@drawable/baseline_home_black_18dp"/>
+    <item android:id="@+id/history"
+        android:title="@string/history"
+        android:icon="@drawable/baseline_history_black_18dp"/>
+    <item android:id="@+id/account"
+        android:title="@string/account"
+        android:icon="@drawable/baseline_account_circle_black_18dp"/>
+</menu>

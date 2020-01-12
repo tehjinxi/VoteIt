@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="edit_forum">20dp</dimen>
+    <dimen name="text_forum">16dp</dimen>
+    <dimen name="text_forum_padding">16dp</dimen>
+    <dimen name="edit_forum_padding">12dp</dimen>
+    <dimen name="zero">0dp</dimen>
+    <dimen name="forum_list">25dp</dimen>
+    <dimen name="forum_list_padding">12dp</dimen>
+    <dimen name="contact_us">190dp</dimen>
+    <dimen name="profile_name">24dp</dimen>
+    <dimen name="ic">18dp</dimen>
+    <dimen name="thirty">30sp</dimen>
+    <dimen name="fifty_two">52dp</dimen>
+</resources>

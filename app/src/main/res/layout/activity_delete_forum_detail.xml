@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DeleteForumDetailActivity"
+        android:fillViewport="true">
+
+        <ImageView
+            android:id="@+id/forum_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="@dimen/edit_forum_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/editForumDetailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/forum_title"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/text_forum_padding"
+            android:layout_marginTop="@dimen/edit_forum_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forum_image" />
+
+        <TextView
+            android:id="@+id/titleDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="20dp"
+            android:inputType="textMultiLine"
+            android:text="title"
+            android:layout_marginLeft="@dimen/text_forum_padding"
+            android:layout_marginTop="@dimen/edit_forum_padding"
+            android:layout_marginRight="@dimen/text_forum_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editForumDetailTitle" />
+
+        <TextView
+            android:id="@+id/editForumDetailDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/forum_desc"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/text_forum_padding"
+            android:layout_marginTop="@dimen/edit_forum_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleDetail" />
+
+        <TextView
+            android:id="@+id/descDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="20dp"
+            android:inputType="textMultiLine"
+            android:text="desc"
+            android:layout_marginLeft="@dimen/text_forum_padding"
+            android:layout_marginTop="@dimen/edit_forum_padding"
+            android:layout_marginRight="@dimen/text_forum_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editForumDetailDesc" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textSize="20dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="@dimen/edit_forum_padding"
+            android:layout_marginLeft="@dimen/edit_forum_padding"
+            android:layout_marginRight="@dimen/edit_forum_padding"
+            android:layout_marginBottom="@dimen/edit_forum_padding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descDetail"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

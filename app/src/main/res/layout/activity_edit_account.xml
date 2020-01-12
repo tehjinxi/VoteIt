@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/editAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edit_forum"
+            android:text="@string/edit_account"
+            android:textSize="@dimen/thirty"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"  />
+
+        <ImageView
+            android:id="@+id/editUserImg"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="@dimen/text_forum_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editAccount"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/btnUserPic"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:text="Select Picture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editAccount" />
+
+        <TextView
+            android:id="@+id/editNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/fifty_two"
+            android:text="Name"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editUserImg" />
+
+        <TextView
+            android:id="@+id/editUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editNameView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.348"
+            app:layout_constraintStart_toEndOf="@+id/editNameView"
+            tools:text="Name"  />
+
+        <TextView
+            android:id="@+id/editIcView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/profile_name"
+            android:layout_marginTop="@dimen/fifty_two"
+            android:text="IC"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editNameView" />
+
+        <EditText
+            android:id="@+id/editUserIC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text=""
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editIcView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.825"
+            app:layout_constraintStart_toEndOf="@+id/editIcView" />
+
+        <TextView
+            android:id="@+id/editPhoneView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/profile_name"
+            android:layout_marginTop="@dimen/fifty_two"
+            android:text="Phone No."
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editIcView" />
+
+        <EditText
+            android:id="@+id/editUserPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editPhoneView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.743"
+            app:layout_constraintStart_toEndOf="@+id/editPhoneView"  />
+
+        <TextView
+            android:id="@+id/editEmailView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/profile_name"
+            android:layout_marginTop="@dimen/fifty_two"
+            android:text="E-mail"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editPhoneView"  />
+
+        <EditText
+            android:id="@+id/editUserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName|textEmailAddress"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editEmailView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.791"
+            app:layout_constraintStart_toEndOf="@+id/editEmailView"  />
+
+        <TextView
+            android:id="@+id/passView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/profile_name"
+            android:layout_marginTop="@dimen/fifty_two"
+            android:text="Password"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editEmailView" />
+
+        <EditText
+            android:id="@+id/editPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text=""
+            app:layout_constraintBaseline_toBaselineOf="@+id/passView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toEndOf="@+id/passView"
+            tools:text="Password"  />
+
+        <ImageView
+            android:id="@+id/editIcImgView"
+            android:layout_width="362dp"
+            android:layout_height="133dp"
+            android:layout_marginLeft="@dimen/profile_name"
+            android:layout_marginTop="@dimen/fifty_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passView"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/btnCamera"
+            android:layout_width="362dp"
+            android:layout_height="133dp"
+            android:layout_marginLeft="@dimen/profile_name"
+            android:layout_marginTop="56dp"
+            android:text="Select Picture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passView"  />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/white"
+            android:text="@string/cancel"
+            android:textSize="@dimen/edit_forum"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editIcImgView"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/btnEditAccount"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="@dimen/fifty_two"
+            android:background="@color/white"
+            android:text="@string/edit"
+            android:textSize="@dimen/edit_forum"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.945"
+            app:layout_constraintStart_toEndOf="@+id/btnCancel"
+            app:layout_constraintTop_toBottomOf="@+id/editIcImgView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

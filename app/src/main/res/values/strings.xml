@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Vote It</string>
+    <string name="about_us">About Us</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="home">Home</string>
+    <string name="history">History</string>
+    <string name="account">Account</string>
+    <string name="post_forum">Post forum</string>
+    <string name="edit_forum">Edit forum</string>
+    <string name="delete_forum">Delete forum</string>
+    <string name="manage_forum">Manage forum</string>
+    <string name="post">Post</string>
+    <string name="forum_title">Forum Title</string>
+    <string name="forum_desc">Forum Description</string>
+    <string name="edit_forum_ins">&#8595;&#8595; Press edit button after editing... &#8595;&#8595;</string>
+    <string name="forum_list">Forum List</string>
+    <string name="contact_email">Contact via email: </string>
+    <string name="contact_phone">Contact via mobile: </string>
+    <string name="contact_email_detail">support@voteit.com</string>
+    <string name="contact_phone_detail">011-22334455</string>
+    <string name="contact_address">Corperate address: </string>
+    <string name="contact_address_detail">
+        No 88, Jalan 88/8\nTaman Huat Huat\n88000 Setapak\nKuala Lumpur,\nMalaysia</string>
+    <string name="about_title">Welcome to Vote It</string>
+    <string name="about_desc">Vote It is an app that open to all citizen in Malaysia,
+        provide a platform that allow all Malaysian to have a chance to voice out their opinion
+        regarding the policy that government wanted to implement. Every Malaysian are allow to
+        vote and comment on each and every forum.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="post_forum_photo">Select Photo</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit">Edit</string>
+    <string name="edit_account">Edit Account</string>
+</resources>
